@@ -68,7 +68,6 @@ function precioFinal(resultado, cuotas) {
 const form = document.getElementById("form");
 const shoes = document.getElementById("shoes");
 const cuotasId = document.getElementById("cuotas");
-const label= document.getElementById("label");
 
 form.onsubmit = (event) => {
     event.preventDefault()
@@ -79,11 +78,11 @@ form.onsubmit = (event) => {
     let validacion=confirm ("¿Seguir comprando?");
     if (validacion==true) {
     } else {
-        label.innerHTML = "Sold"
+        form.innerHTML = "Sold"
     }
 }
 
-
+/*  Form de cuotas  */
 {/* <label for="cuotas">Elija la cantidad de cuotas:</label>
 <select id="cuotas" name="cuotas">
     <option value="Nike air force">3</option>
