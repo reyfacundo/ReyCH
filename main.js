@@ -65,32 +65,28 @@ function precioFinal(resultado, cuotas) {
             break;
     }
 }
-
-let listado = [
-    {ID: 1, precio: 15000},
-    {ID: 2, precio: 10000},
-    {ID: 3, precio: 13400},
-    {ID: 4, precio: 9000},
-    {ID: 5, precio: 7600},
-    {ID: 6, precio: 11500},
-    {ID: 7, precio: 5500},
-]
-
-let ofertaNavideña = listado.filter(navidad => navidad.precio <= 10000);
-
-console.log(ofertaNavideña);
-
 const form = document.getElementById("form");
-const nombre = document.getElementById("nombre");
-const edad = document.getElementById("edad");
-const email = document.getElementById("email");
+const shoes = document.getElementById("shoes");
+const cuotasId = document.getElementById("cuotas");
+const label= document.getElementById("label");
 
 form.onsubmit = (event) => {
     event.preventDefault()
     const usuario = {
-        name: nombre.value,
-        age: edad.value,
-        email: email.value
+        modelo: shoes.value
     }
-    console.log(usuario)
+    console.log(usuario);
+    let validacion=confirm ("¿Seguir comprando?");
+    if (validacion==true) {
+    } else {
+        label.innerHTML = "Sold"
+    }
 }
+
+
+{/* <label for="cuotas">Elija la cantidad de cuotas:</label>
+<select id="cuotas" name="cuotas">
+    <option value="Nike air force">3</option>
+    <option value="Adidas Superstar">6</option>
+    <option value="Vans Old Skool">12</option>
+</select> */}
