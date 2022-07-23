@@ -4,7 +4,6 @@ let cantidad = 0;
 let precioTotal = 0;
 let seguirComprando = false;
 let cuotas = false; 
-
 let zapatillaSelect = "";
 let cuotasSelect = 0;
 let arrayCompra = [];
@@ -37,6 +36,8 @@ btnCompra.addEventListener ( "click", () => {
             console.log(arrayCompra);
             console.log("En " + cuotasSelect + " Cuotas.");
             localStorage.setItem("Zapatillas", JSON.stringify(arrayCompra));
+            localStorage.getItem("Zapatillas")
+            form.innerHTML="Has finalizado la compra!"
         }
     })
 });
