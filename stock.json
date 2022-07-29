@@ -1,0 +1,8 @@
+[
+    {"nombre": "Nike air force", "precio": 1700},
+    {"nombre": "Adidas Superstar", "precio": 700},
+    {"nombre": "Vans Old Skool", "precio": 800},
+    {"nombre": "Puma Borussia", "precio": 1200},
+    {"nombre": "Fila Racer", "precio": 900},
+    {"nombre": "Reebok Lite", "precio": 600}
+]
